@@ -24,7 +24,7 @@
 #include <mqtt/will.hpp>
 #include <mqtt/connect_flags.hpp>
 #include <mqtt/publish.hpp>
-
+#include <mqtt/property.hpp>
 
 namespace mqtt {
 

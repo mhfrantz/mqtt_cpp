@@ -26,6 +26,12 @@ struct remaining_length_error : std::exception {
     }
 };
 
+struct variable_length_error : std::exception {
+    virtual char const* what() const noexcept {
+        return "variable length error";
+    }
+};
+
 struct utf8string_length_error : std::exception {
     virtual char const* what() const noexcept {
         return "utf8string length error";
